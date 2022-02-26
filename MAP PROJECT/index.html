@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Script src="Map.js"> defer </Script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <title>Interactive Map Project</title>
+   <style>
+       #map {
+           height: 800px;
+       }
+       .leaflet-popup-content-wrapper{
+           width: 100%;
+       }
+   </style>
+</head>
+<body>
+    <form>
+        <select id="business">
+            <option value="food">Food</option>
+            <option value="coffee">Coffee</option>
+            <option value="hotels">Hotels</option>
+            <option value="market">Markets</option>
+        </select>
+        <button id="submit">submit</button>
+    </form>
+    <div id="map"></div>
+</body>
+</html>
